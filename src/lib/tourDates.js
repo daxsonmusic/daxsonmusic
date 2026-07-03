@@ -87,15 +87,19 @@ export async function getTourDates() {
     const dates = rows
       .map((row) => {
         const country = get(row, "country");
+        const ticketValue = get(row, "ticketurl") || get(row, "tickets") || get(row, "ticketlink");
+        const showOnWebsite = get(row, "showonwebsite") || get(row, "visible") || get(row, "live");
+
         return {
-          date: get(row, "date"),
-          displayDate: formatDisplayDate(get(row, "date"), get(row, "displaydate")),
-          venue: get(row, "venue"),
+          date: get(row, "startdate") || get(row, "date"),
+          displayDate: formatDisplayDate(get(row, "startdate") || get(row, "date"), get(row, "displaydate")),
+          venue: get(row, "venuefestival") || get(row, "venue") || get(row, "festival"),
           city: get(row, "city"),
           country,
-          flag: get(row, "flag") || countryFlags[country] || "",
-          ticketUrl: get(row, "ticketurl"),
-          visible: normalizeBoolean(get(row, "visible"))
+          flag: get(row, "countrycodeflag") || get(row, "flag") || countryFlags[country] || "",
+          ticketUrl: ticketValue.startsWith("http") ? ticketValue : "",
+          ticketLabel: ticketValue && !ticketValue.startsWith("http") ? ticketValue : "Tickets soon",
+          visible: normalizeBoolean(showOnWebsite)
         };
       })
       .filter((show) => show.visible && show.venue)

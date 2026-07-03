@@ -49,7 +49,7 @@ export default async function Home() {
                 {show.ticketUrl ? (
                   <a className="ticket" href={show.ticketUrl} target="_blank" rel="noreferrer">Tickets</a>
                 ) : (
-                  <span className="ticket muted">Tickets soon</span>
+                  <span className="ticket muted">{show.ticketLabel || "Tickets soon"}</span>
                 )}
               </article>
             ))}
