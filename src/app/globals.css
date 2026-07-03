@@ -1,0 +1,29 @@
+:root{
+  --bg:#030303;
+  --ink:#fff;
+  --muted:#b7b7b7;
+  --line:rgba(255,255,255,.12);
+  --accent:#ff7900;
+  --accent-soft:rgba(255,121,0,.18);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;letter-spacing:.01em;overflow-x:hidden}
+.noise{position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:50;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px;mix-blend-mode:overlay}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:22px clamp(18px,4vw,52px);background:linear-gradient(rgba(0,0,0,.55),transparent)}
+.brand img{width:clamp(150px,18vw,230px);display:block}.nav{display:flex;gap:30px;align-items:center}
+.nav a{color:#fff;text-transform:uppercase;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.12em;opacity:.86}.nav a:hover{color:var(--accent);opacity:1}
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;overflow:hidden}.hero-bg{position:absolute;inset:0;background:url("/assets/daxson-hero.jpg") right center/auto 100% no-repeat;background-color:#050505;transform:scale(1.02);animation:slowZoom 18s ease-out forwards}
+.hero-vignette{position:absolute;inset:0;background:radial-gradient(circle at 68% 42%,rgba(255,121,0,.13),transparent 34%),linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.72) 36%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.38) 100%),linear-gradient(0deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.28) 100%)}
+.hero-content{position:relative;z-index:2;margin-left:clamp(24px,6vw,70px);max-width:min(720px,88vw);padding-top:70px}.hero-logo{width:min(620px,88vw);filter:drop-shadow(0 10px 30px rgba(0,0,0,.55));animation:fadeUp .9s ease both}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.button,.ticket{border:1px solid var(--accent);color:#fff;text-decoration:none;text-transform:uppercase;font-weight:900;letter-spacing:.12em;font-size:12px;padding:15px 20px;display:inline-flex;align-items:center;justify-content:center;transition:.2s ease}
+.button.primary{background:var(--accent);color:#000}.button:hover,.ticket:hover{background:var(--accent);color:#000;transform:translateY(-2px)}.button.ghost{background:rgba(0,0,0,.15)}
+.section{max-width:var(--max);margin:0 auto;padding:76px 22px}.section-kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.48em;font-weight:800;font-size:12px}.section-title{font-size:clamp(28px,5vw,58px);text-transform:uppercase;letter-spacing:.18em;text-align:center;margin:8px 0 34px}.tour .section-kicker{text-align:center}
+.shows{border-top:1px solid var(--line)}.show-card{display:grid;grid-template-columns:110px 1fr 150px;gap:18px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);background:linear-gradient(90deg,transparent,var(--accent-soft),transparent);background-size:0% 100%;background-repeat:no-repeat;transition:.22s ease}.show-card:hover{background-size:100% 100%;padding-left:14px}.date{color:var(--accent);font-weight:950;letter-spacing:.08em}.show-info h2{margin:0 0 5px;font-size:18px}.show-info p{margin:0;color:var(--muted)}.ticket{padding:11px 14px;font-size:11px}.ticket.muted{border-color:var(--line);color:#777}.ticket.muted:hover{background:transparent;color:#777;transform:none}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));padding:28px}.panel h2{font-size:clamp(28px,4vw,44px);margin:8px 0 18px;line-height:1.04}.panel p{color:var(--muted);line-height:1.7}
+.social-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.social-grid a{min-height:86px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;text-transform:uppercase;font-size:11px;font-weight:900;letter-spacing:.1em;background:rgba(255,255,255,.025);transition:.2s}.social-grid a:hover{border-color:var(--accent);background:var(--accent);color:#000;transform:translateY(-3px)}
+.booking{padding:86px 22px;text-align:center;background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.92)),url("/assets/daxson-hero.jpg") center 70%/cover fixed}.booking-email{display:inline-block;color:#fff;text-decoration:none;font-size:clamp(24px,5vw,46px);letter-spacing:.04em;margin-top:10px}.booking-email:hover{color:var(--accent)}
+footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-size:11px;letter-spacing:.16em}
+@keyframes slowZoom{from{transform:scale(1.08)}to{transform:scale(1.01)}}@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media (max-width:760px){.site-header{padding:16px 18px}.brand img{width:150px}.nav{gap:14px}.nav a{font-size:10px}.hero-bg{background-position:center top;background-size:cover}.hero-vignette{background:linear-gradient(0deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.38) 48%,rgba(0,0,0,.35) 100%)}.hero-content{align-self:end;margin:0;padding:0 20px 88px;max-width:100%}.hero-logo{width:94vw}.button{width:100%}.show-card{grid-template-columns:1fr;gap:8px;padding:18px 0}.ticket{width:100%}.split{grid-template-columns:1fr}.social-grid{grid-template-columns:repeat(2,1fr)}.section{padding:58px 18px}.section-title{letter-spacing:.12em}.booking{background-attachment:scroll}}

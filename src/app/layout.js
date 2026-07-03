@@ -1,0 +1,22 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "Daxson | Official Website",
+  description: "Official website for Daxson. Tour dates, music, socials and booking contact.",
+  openGraph: {
+    title: "Daxson | Official Website",
+    description: "Tour dates, music and booking contact for Daxson.",
+    url: "https://daxsonmusic.com",
+    siteName: "Daxson",
+    images: ["/assets/daxson-hero.jpg"],
+    type: "website"
+  }
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}

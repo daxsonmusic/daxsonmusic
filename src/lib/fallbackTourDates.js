@@ -1,0 +1,21 @@
+export const fallbackTourDates = [
+  { date: "2026-06-26", displayDate: "JUN 26", venue: "Luminosity Beach Festival", city: "Zandvoort", country: "Netherlands", flag: "🇳🇱", ticketUrl: "", visible: true },
+  { date: "2026-07-11", displayDate: "JUL 11", venue: "Wartownia Festival", city: "Gorzów Wielkopolski", country: "Poland", flag: "🇵🇱", ticketUrl: "", visible: true },
+  { date: "2026-07-25", displayDate: "JUL 25", venue: "Aura Nightclub", city: "San Jose", country: "USA", flag: "🇺🇸", ticketUrl: "", visible: true },
+  { date: "2026-07-31", displayDate: "JUL 31", venue: "Club Araoz", city: "Buenos Aires", country: "Argentina", flag: "🇦🇷", ticketUrl: "", visible: true },
+  { date: "2026-08-08", displayDate: "AUG 08", venue: "Zurich Street Parade", city: "Zurich", country: "Switzerland", flag: "🇨🇭", ticketUrl: "", visible: true },
+  { date: "2026-08-08", displayDate: "AUG 08", venue: "Alte Kaserne", city: "Zurich", country: "Switzerland", flag: "🇨🇭", ticketUrl: "", visible: true },
+  { date: "2026-08-14", displayDate: "AUG 14", venue: "Ora", city: "Seattle", country: "USA", flag: "🇺🇸", ticketUrl: "", visible: true },
+  { date: "2026-08-15", displayDate: "AUG 15", venue: "Vixens", city: "Fort Lauderdale", country: "USA", flag: "🇺🇸", ticketUrl: "", visible: true },
+  { date: "2026-08-22", displayDate: "AUG 22", venue: "XOYO", city: "London", country: "UK", flag: "🇬🇧", ticketUrl: "", visible: true },
+  { date: "2026-08-29", displayDate: "AUG 29", venue: "Creamfields", city: "Daresbury", country: "UK", flag: "🇬🇧", ticketUrl: "", visible: true },
+  { date: "2026-09-20", displayDate: "SEP 20", venue: "Jardin Al Bosque", city: "San Juan", country: "Puerto Rico", flag: "🇵🇷", ticketUrl: "", visible: true },
+  { date: "2026-09-26", displayDate: "SEP 26", venue: "Euforia Dźwięku", city: "Warsaw", country: "Poland", flag: "🇵🇱", ticketUrl: "", visible: true },
+  { date: "2026-10-03", displayDate: "OCT 03", venue: "Victoria Warehouse", city: "Manchester", country: "UK", flag: "🇬🇧", ticketUrl: "", visible: true },
+  { date: "2026-10-17", displayDate: "OCT 17", venue: "NWHR", city: "Montreal", country: "Canada", flag: "🇨🇦", ticketUrl: "", visible: true },
+  { date: "2026-11-07", displayDate: "NOV 07", venue: "Ekwador", city: "Manieczki", country: "Poland", flag: "🇵🇱", ticketUrl: "", visible: true },
+  { date: "2026-11-28", displayDate: "NOV 28", venue: "Transmission", city: "GelreDome, Arnhem", country: "Netherlands", flag: "🇳🇱", ticketUrl: "", visible: true },
+  { date: "2026-12-19", displayDate: "DEC 19", venue: "EDC Thailand", city: "Phuket", country: "Thailand", flag: "🇹🇭", ticketUrl: "", visible: true },
+  { date: "2027-01-15", displayDate: "JAN 15", venue: "Vixens", city: "Fort Lauderdale", country: "USA", flag: "🇺🇸", ticketUrl: "", visible: true },
+  { date: "2027-01-21", displayDate: "JAN 21–25", venue: "Groove Cruise", city: "Miami", country: "USA", flag: "🇺🇸", ticketUrl: "", visible: true }
+];
