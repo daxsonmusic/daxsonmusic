@@ -16,7 +16,7 @@ export default async function Home() {
           <a href="#tour">Tour</a>
           <a href="#music">Music</a>
           <a href="#connect">Connect</a>
-          <a href="#booking">Booking</a>
+          <a href="#bookings">Bookings</a>
         </nav>
       </header>
 
@@ -95,9 +95,13 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className="booking" id="booking">
+        <section className="bookings" id="bookings">
           <p className="section-kicker">Bookings</p>
-          <a className="booking-email" href="mailto:bookings@totalvisiontalent.com">bookings@totalvisiontalent.com</a>
+          <a className="bookings-email" href="mailto:bookings@totalvisiontalent.com">bookings@totalvisiontalent.com</a>
+<h3>Contact &amp; Promos</h3>
+<a href="mailto:info@daxsonmusic.com">
+  info@daxsonmusic.com
+</a>
         </section>
       </main>
 
