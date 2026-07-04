@@ -102,14 +102,14 @@ export default async function Home() {
     <div>
       <h3>Bookings</h3>
       <a className="booking-email" href="mailto:bookings@totalvisiontalent.com">
-        bookings@totalvisiontalent.com
+        Bookings
       </a>
     </div>
 
     <div>
       <h3>Contact &amp; Promos</h3>
       <a className="booking-email" href="mailto:info@daxsonmusic.com">
-        info@daxsonmusic.com
+        Contact & Promos
       </a>
     </div>
   </div>
