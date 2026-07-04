@@ -69,11 +69,15 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
 }
 
 .booking-links {
-  display: inline-grid;
-  gap: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.booking {
-  text-align: center;
+.booking-links > div {
+  min-width: 260px;
 }
