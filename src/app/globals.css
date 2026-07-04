@@ -67,3 +67,16 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
   background: #ff7900;
   color: black;
 }
+
+.booking-links {
+  display: grid;
+  gap: 32px;
+}
+
+.booking-links h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  color: #ff7900;
+}
