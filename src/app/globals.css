@@ -81,3 +81,7 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
 .booking-links > div {
   min-width: 260px;
 }
+
+.booking-kicker {
+  text-align: center;
+}

@@ -96,7 +96,7 @@ export default async function Home() {
         </section>
 
    <section className="bookings" id="bookings">
-  <p className="section-kicker">Contact</p>
+<p className="section-kicker booking-kicker">Contact</p>
 
   <div className="booking-links">
     <div>
@@ -109,7 +109,7 @@ export default async function Home() {
     <div>
       <h3>Contact &amp; Promos</h3>
       <a className="booking-email" href="mailto:info@daxsonmusic.com">
-        Contact & Promos
+       Contact & Promos
       </a>
     </div>
   </div>
