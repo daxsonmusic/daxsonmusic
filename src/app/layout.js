@@ -3,6 +3,9 @@ import "./globals.css";
 export const metadata = {
   title: "Daxson | Official Website",
   description: "Official website for Daxson. Tour dates, music, socials and booking contact.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Daxson | Official Website",
     description: "Tour dates, music and booking contact for Daxson.",
