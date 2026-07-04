@@ -2,7 +2,7 @@ name: Refresh website from Google Sheet
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
