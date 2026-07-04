@@ -27,3 +27,43 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helv
 footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-size:11px;letter-spacing:.16em}
 @keyframes slowZoom{from{transform:scale(1.08)}to{transform:scale(1.01)}}@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 @media (max-width:760px){.site-header{padding:16px 18px}.brand img{width:150px}.nav{gap:14px}.nav a{font-size:10px}.hero-bg{background-position:center top;background-size:cover}.hero-vignette{background:linear-gradient(0deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.38) 48%,rgba(0,0,0,.35) 100%)}.hero-content{align-self:end;margin:0;padding:0 20px 88px;max-width:100%}.hero-logo{width:94vw}.button{width:100%}.show-card{grid-template-columns:1fr;gap:8px;padding:18px 0}.ticket{width:100%}.split{grid-template-columns:1fr}.social-grid{grid-template-columns:repeat(2,1fr)}.section{padding:58px 18px}.section-title{letter-spacing:.12em}.booking{background-attachment:scroll}}
+
+.cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  max-width: 520px;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: white;
+  font-size: 14px;
+}
+
+.cookie-banner p {
+  margin: 0 0 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.cookie-banner div {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-banner button {
+  border: 1px solid #ff7900;
+  background: transparent;
+  color: white;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cookie-banner button:last-child {
+  background: #ff7900;
+  color: black;
+}

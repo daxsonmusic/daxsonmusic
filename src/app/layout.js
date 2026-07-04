@@ -1,4 +1,5 @@
 import "./globals.css";
+import CookieConsent from "./CookieConsent";
 
 export const metadata = {
   title: "Daxson | Official Website",
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   );
 }
