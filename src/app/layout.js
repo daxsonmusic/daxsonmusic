@@ -47,38 +47,60 @@ icons: {
     images: ["/assets/daxson-hero.jpg"],
   },
 };
-
 const artistSchema = {
   "@context": "https://schema.org",
-  "@type": "MusicGroup",
+  "@type": "Person",
   name: "Daxson",
   alternateName: "Dan Dobson",
   url: "https://daxsonmusic.com",
   image: "https://daxsonmusic.com/assets/daxson-hero.jpg",
-  genre: ["Trance", "Electronic Music", "Techno"],
+  genre: [
+    "Trance",
+    "Electronic Dance Music",
+    "Progressive Trance",
+    "Uplifting Trance",
+	"Techno",
+
+
+  ],
   sameAs: [
     "https://open.spotify.com/artist/4WwMR8h0vztJLNgiL5ZFqW",
+    "https://music.apple.com/us/artist/daxson/1206606147",
     "https://instagram.com/daxsonmusic",
-    "https://soundcloud.com/daxsonmusic",
-    "https://youtube.com/@daxsonmusic",
-    "https://tiktok.com/@daxsonmusic",
     "https://facebook.com/daxsonmusic",
+    "https://youtube.com/@daxsonmusic",
+    "https://www.beatport.com/artist/daxson",
+    "https://soundcloud.com/daxsonmusic",
+    "https://tiktok.com/@daxsonmusic"
   ],
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "bookings@totalvisiontalent.com",
-    contactType: "booking",
-  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Bookings",
+      "email": "bookings@totalvisiontalent.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Promos",
+      "email": "info@daxsonmusic.com"
+    }
+  ]
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(artistSchema) }}
-        />
+    <body>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(artistSchema) }}
+  />
+
+  {children}
+
+  <CookieConsent />
+</body>
         {children}
         <CookieConsent />
       </body>
