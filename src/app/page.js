@@ -17,6 +17,7 @@ export default async function Home() {
           <a href="#music">Music</a>
           <a href="#connect">Connect</a>
           <a href="#bookings">Bookings</a>
+	<a className="insider-nav" href="/signup">Insider Community</a>
         </nav>
       </header>
 
