@@ -6,10 +6,7 @@ export const metadata = {
   },
 };
 
-export default function SignupPage({ searchParams }) {
-  const success = searchParams?.success === "true";
-  const error = searchParams?.error;
-
+export default function SignupPage() {
   return (
     <main className="signup-page">
       <section className="signup-hero">
@@ -27,70 +24,57 @@ export default function SignupPage({ searchParams }) {
             Be the first to hear about new music, tour dates, exclusive content and presale access.
           </p>
 
-          {success && (
-            <div className="signup-message success">
-              Thanks for joining. You&apos;re now part of the Daxson Insider Community.
-            </div>
-          )}
-
-          {error && (
-            <div className="signup-message error">
-              Something went wrong. Please check your details and try again.
-            </div>
-          )}
-
-          {!success && (
-            <form className="insider-form" action="/api/signup" method="POST">
-              <div className="form-row">
-                <label>
-                  <span>First Name</span>
-                  <input name="firstName" type="text" autoComplete="given-name" placeholder="First Name" required />
-                </label>
-
-                <label>
-                  <span>Last Name</span>
-                  <input name="lastName" type="text" autoComplete="family-name" placeholder="Last Name" required />
-                </label>
-              </div>
-
+          <form className="insider-form" action="/api/signup" method="POST">
+            <div className="form-row">
               <label>
-                <span>Email Address</span>
-                <input name="email" type="email" autoComplete="email" placeholder="Email Address" required />
+                <span>First Name</span>
+                <input name="firstName" type="text" autoComplete="given-name" placeholder="First Name" required />
               </label>
 
-              <div className="form-row">
-                <label>
-                  <span>City</span>
-                  <input name="city" type="text" autoComplete="address-level2" placeholder="City" required />
-                </label>
+              <label>
+                <span>Last Name</span>
+                <input name="lastName" type="text" autoComplete="family-name" placeholder="Last Name" required />
+              </label>
+            </div>
 
-                <label>
-                  <span>Country</span>
-                  <select name="country" autoComplete="country-name" required defaultValue="">
-                    <option value="" disabled>Country</option>
-   		  <option value="United Kingdom">United Kingdom</option>
+            <label>
+              <span>Email Address</span>
+              <input name="email" type="email" autoComplete="email" placeholder="Email Address" required />
+            </label>
+
+            <div className="form-row">
+              <label>
+                <span>City</span>
+                <input name="city" type="text" autoComplete="address-level2" placeholder="City" required />
+              </label>
+
+              <label>
+                <span>Country</span>
+                <select name="country" autoComplete="country-name" required defaultValue="">
+                  <option value="" disabled>Country</option>
+                  <option value="United Kingdom">United Kingdom</option>
                   <option value="United States">United States</option>
-  <option value="Netherlands">Netherlands</option>
- <option value="Germany">Germany</option>
-<option value="Poland">Poland</option>
- <option value="Argentina">Argentina</option>
-<option value="Australia">Australia</option>
-<option value="Canada">Canada</option>
-<option value="Czech Republic">Czech Republic</option>
- <option value="France">France</option>
- <option value="Ireland">Ireland</option>
-<option value="Italy">Italy</option>
- <option value="Malaysia">Malaysia</option>
-     <option value="Mexico">Mexico</option>
- <option value="Romania">Romania</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="France">France</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Romania">Romania</option>
                   <option value="Slovakia">Slovakia</option>
- <option value="South Africa">South Africa</option>
-   <option value="Spain">Spain</option>
-     <option value="Switzerland">Switzerland</option>
-   <option value="Sweden">Sweden</option>
-<option value="Thailand">Thailand</option>
-  <option value="Vietnam">Vietnam</option>
-<option value="------">-------</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option disabled>──────────</option>
                   <option value="Afghanistan">Afghanistan</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
@@ -145,7 +129,7 @@ export default function SignupPage({ searchParams }) {
                   <option value="Eswatini">Eswatini</option>
                   <option value="Ethiopia">Ethiopia</option>
                   <option value="Fiji">Fiji</option>
-                  <option value="Finland">Finland</option>       
+                  <option value="Finland">Finland</option>
                   <option value="Gabon">Gabon</option>
                   <option value="Gambia">Gambia</option>
                   <option value="Georgia">Georgia</option>
@@ -217,7 +201,7 @@ export default function SignupPage({ searchParams }) {
                   <option value="Peru">Peru</option>
                   <option value="Philippines">Philippines</option>
                   <option value="Portugal">Portugal</option>
-                  <option value="Qatar">Qatar</option>  
+                  <option value="Qatar">Qatar</option>
                   <option value="Russia">Russia</option>
                   <option value="Rwanda">Rwanda</option>
                   <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
@@ -263,13 +247,12 @@ export default function SignupPage({ searchParams }) {
                   <option value="Yemen">Yemen</option>
                   <option value="Zambia">Zambia</option>
                   <option value="Zimbabwe">Zimbabwe</option>
-                  </select>
-                </label>
-              </div>
+                </select>
+              </label>
+            </div>
 
-              <button type="submit">Join the Insider Community</button>
-            </form>
-          )}
+            <button type="submit">Join the Insider Community</button>
+          </form>
 
           <p className="signup-small">
             By signing up, you agree to receive email updates from Daxson. You can unsubscribe at any time.

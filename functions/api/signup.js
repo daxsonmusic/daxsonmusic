@@ -44,7 +44,7 @@ export async function onRequestPost(context) {
       return redirect("/signup?error=brevo");
     }
 
-    return redirect("/signup?success=true");
+   return redirect("/signup/success");
   } catch (error) {
     console.error("Signup function error:", error);
     return redirect("/signup?error=server");
