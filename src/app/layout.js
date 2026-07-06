@@ -91,17 +91,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-    <body>
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(artistSchema) }}
-  />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(artistSchema),
+          }}
+        />
 
-  {children}
-
-  <CookieConsent />
-</body>
         {children}
+
         <CookieConsent />
       </body>
     </html>
