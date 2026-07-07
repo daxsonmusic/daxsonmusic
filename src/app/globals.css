@@ -308,3 +308,33 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
 .nav a.insider-nav {
   color: #ff7900;
 }
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+    gap: 18px;
+    padding: 28px 22px;
+  }
+
+  .brand img {
+    width: 170px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px 22px;
+  }
+
+  .nav a {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+  }
+
+  .insider-nav {
+    color: #ff7900;
+  }
+}
