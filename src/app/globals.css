@@ -343,14 +343,15 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
   .site-header {
     flex-direction: row;
     align-items: center;
-    padding: 18px 20px;
-    gap: 14px;
+    padding: 10px 16px;
+    gap: 10px;
+    min-height: 56px;
     background: rgba(0, 0, 0, 0.92);
     backdrop-filter: blur(10px);
   }
 
   .brand img {
-    width: 145px;
+    width: 115px;
   }
 
   .nav {
@@ -358,7 +359,7 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 18px;
+    gap: 16px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -368,12 +369,13 @@ footer{text-align:center;color:#777;padding:26px;text-transform:uppercase;font-s
   }
 
   .nav a {
-    font-size: 11px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
     white-space: nowrap;
     flex: 0 0 auto;
   }
 
   main {
-    padding-top: 82px;
+    padding-top: 66px;
   }
 }
