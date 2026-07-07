@@ -99,21 +99,21 @@ export default async function Home() {
    <section className="bookings" id="bookings">
 <p className="section-kicker booking-kicker">Contact</p>
 
-  <div className="booking-links">
-    <div>
-      <h3>Bookings</h3>
-      <a className="booking-email" href="mailto:bookings@totalvisiontalent.com">
-        Bookings
-      </a>
-    </div>
+<div className="booking-links">
+  <a
+    className="booking-button"
+    href="mailto:bookings@totalvisiontalent.com"
+  >
+    BOOKINGS
+  </a>
 
-    <div>
-      <h3>Contact &amp; Promos</h3>
-      <a className="booking-email" href="mailto:info@daxsonmusic.com">
-       Contact & Promos
-      </a>
-    </div>
-  </div>
+  <a
+    className="booking-button"
+    href="mailto:info@daxsonmusic.com"
+  >
+    CONTACT &amp; PROMOS
+  </a>
+</div>
 </section>
       </main>
 
