@@ -1,4 +1,5 @@
 import { getTourDates } from "../lib/tourDates";
+import TrackedTicketLink from "../components/TrackedTicketLink";
 
 export const revalidate = 3600;
 
@@ -48,10 +49,15 @@ export default async function Home() {
                   <p><span>{show.flag}</span> {show.city}{show.country ? `, ${show.country}` : ""}</p>
                 </div>
                 {show.ticketUrl ? (
-                  <a className="ticket" href={show.ticketUrl} target="_blank" rel="noreferrer">Tickets</a>
-                ) : (
-                  <span className="ticket muted">{show.ticketLabel || "Tickets soon"}</span>
-                )}
+  <TrackedTicketLink
+    ticketUrl={show.ticketUrl}
+    venue={show.venue}
+    city={show.city}
+    country={show.country}
+  />
+) : (
+  <span className="ticket muted">{show.ticketLabel || "Tickets soon"}</span>
+)}
               </article>
             ))}
           </div>
