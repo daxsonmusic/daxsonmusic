@@ -1,6 +1,5 @@
 import "./globals.css";
 import CookieConsent from "./CookieConsent";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   metadataBase: new URL("https://daxsonmusic.com"),
@@ -102,7 +101,6 @@ export default function RootLayout({ children }) {
         {children}
 
         <CookieConsent />
-<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
